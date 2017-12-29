@@ -11,7 +11,7 @@ skynet.start(function (  )
 	-- local password = md5.hmacmd5("123")
 	-- print(password,"----------")
 	--skynet.newservice("testharbor")
-	-- skynet.newservice("mysqldb")//暂时先不要sql 12-29
+	skynet.newservice("mysqldb")
 	skynet.newservice("rankinglist")
 	local db = skynet.newservice("simpledb")
 	skynet.call("SIMPLEDB","lua","del","onlinepeople")
