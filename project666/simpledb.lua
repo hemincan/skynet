@@ -54,6 +54,7 @@ function command.HGET(hkey,key)--获取指定键哈兮字段值
 end
 
 skynet.start(function()
+	skynet.error(redis);
 	db = redis.connect(conf)
 	skynet.dispatch("lua", function(session, address, cmd, ...)
 		local f = command[string.upper(cmd)]
@@ -64,4 +65,5 @@ skynet.start(function()
 		end
 	end)
 	skynet.register "SIMPLEDB"
+	skynet.error("Redis start end!");
 end)
