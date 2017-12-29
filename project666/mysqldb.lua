@@ -590,11 +590,11 @@ function DBCONNET()--连接数据库
 		db:query("set charset utf8")
 	end
 	db = mysql.connect({
-		host="59.110.139.75",--192.168.80.163,59.110.139.75,60.205.179.119
+		host="rm-uf605p5bor0d8f1bco.mysql.rds.aliyuncs.com",--192.168.80.163,59.110.139.75,60.205.179.119
 		port=3306,
 		database="xtnc",
 		user="root",
-		password="81194324",
+		password="Hemincan007",
 		max_packet_size = 1024 * 1024,
 		on_connect = set_charset
 	})
