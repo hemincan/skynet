@@ -14,7 +14,7 @@ skynet.start(function (  )
 	skynet.newservice("mysqldb")
 	skynet.newservice("rankinglist")
 	local db = skynet.newservice("simpledb")
-	skynet.call("SIMPLEDB","lua","del","onlinepeople")
+	-- skynet.call("SIMPLEDB","lua","del","onlinepeople")12.29日
 	local gate=skynet.newservice("farmgate")
 	skynet.newservice("zeroupdate")
 	skynet.newservice("gamecache")
