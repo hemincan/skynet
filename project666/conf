@@ -1,6 +1,6 @@
 root = "./"
 thread = 8
---logger = "game.log"
+logger = nil
 logpath = "."
 harbor = 0
 --address = "192.168.83.142:2526"
