@@ -27,7 +27,7 @@ skynet.start(function (  )
 	-- end
 	skynet.call(gate,"lua","open",{
 		address="0.0.0.0",
-		port = 6666,
+		port = 8888,
 		maxclient = 64,
 		nodelay = true,
 	})
