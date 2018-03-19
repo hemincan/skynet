@@ -526,6 +526,7 @@ end
 
 function CMD.SELECTSTAGE5(msg)--查询领取状态,msg.uaccount
 	local res = db:query("select stage5 from online where binary uaccount='" .. msg.uaccount .. "' and day=(select curdate())")
+        print(dump(res))
 	local x 
 	for k,v in pairs(res) do
 		for i,j in pairs(v) do

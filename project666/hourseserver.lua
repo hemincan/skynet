@@ -149,7 +149,7 @@ skynet.start(function (  )
 	skynet.fork(function (  )
 		while true do
 			local x = 0	
-			skynet.error("又怒我有体会`````````````````")
+			--skynet.error("又怒我有体会`````````````````")
 			for k,v in pairs(hourses) do
 				x=x+1
 				skynet.error("又怒我有体会",v.num)
