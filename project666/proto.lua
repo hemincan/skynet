@@ -230,14 +230,16 @@ local proto = {
 		"session",
 		"list",
 		list={},
+		"mymoney",
 	},
-
+	
 	"getyesdayalllist",
 	"yesdayalllist",--昨日总排行 
 	yesdayalllist={
 		"session",
 		"list",
 		list={},
+		"mymoney",
 	},
 	---谢武幸
 	--快速进入房间，创建房间返回
@@ -312,6 +314,7 @@ local proto = {
 	messsage={
 		"newmsg",
 		"session",
+		"from",
 	},
 	--编辑用户信息
 	"editeusermsg",
@@ -326,5 +329,35 @@ local proto = {
 	--返回
 	"responseportrait",
 	responsemsg={"session",},
+
+	--刷新昵称
+	"flashusername",
+	--返回
+	"responseflashname",
+	responseflashname={"username","session",},
+
+	"sendmessage",
+	sendmessage={
+		"mess",
+	},
+	"systemmsg",
+	systemmsg={
+		"newmsg",
+		"session",
+		"from",
+	},
+	"initusername",
+	initusername={
+		"newusername",
+	},
+
+	--获得房间的历史消息
+	"gethistorymessage",
+	"historymessage",
+	historymessage={
+		"session",
+		"list",
+		list={},
+	},
 }
 return proto	
